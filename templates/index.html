@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <body>
+        <div class="games">
+            {{GAME_LIST}}
+        </div>
+    </body>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        .games {
+            margin: 0 auto;
+        }
+        .games:hover .game:not(:hover) {
+            background: #CCC;
+            opacity: .2;
+        }
+        .game {
+            border: 1px solid #CCC;
+            margin: 2px 0;
+        }
+        .game__title {
+            background: blue;
+            color: white;
+            padding: 5px 10px;
+        }
+        .game:hover {
+            background: #FFF;
+        }
+        .game__qr {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</html>
